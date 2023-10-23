@@ -1,6 +1,7 @@
+ROOT := ../..
 CC := gcc
-CFLAGS := -g -Wall -std=c99 -I../../text/huffman -I../../common \
-		  -L../../build
+CFLAGS := -g -Wall -std=c99 -I$(ROOT)/text/huffman -I$(ROOT)/common \
+		  -L$(ROOT)/build/text/huffman
 VALGRIND_FLAGS := -s --show-leak-kinds=all --leak-check=full \
 				  --track-origins=yes
 
